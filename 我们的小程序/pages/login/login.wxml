@@ -1,2 +1,7 @@
 <!--pages/login/login.wxml-->
 <text>pages/login/login.wxml</text>
+<view>
+  <view>
+    <icon type="success"></icon>
+  </view>
+</view>
