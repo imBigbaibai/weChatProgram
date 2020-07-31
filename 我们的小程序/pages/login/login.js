@@ -18,7 +18,7 @@ Page({
       username: "18911013998",
       password: "Jn2020@123",
     };
-
+    
     apiReq.getOpenid(parmas)
               .then(res => {
                 console.log(res);
@@ -27,6 +27,7 @@ Page({
                 console.log('-----------')
                 console.log(err);
               })
+  
   },
 
   /**

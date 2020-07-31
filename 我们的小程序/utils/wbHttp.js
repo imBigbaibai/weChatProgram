@@ -1,4 +1,4 @@
-var hostUrl = "http://47.94.226.128:8886/JSJB"
+var hostUrl = "http://219.143.14.72:80/JSJB"
 
 //HTTP 请求方法
 const GET = 'GET';
@@ -17,6 +17,8 @@ function wbRequest(method, url, data){
       url: hostUrl + url,
       method: method,
       data: method === POST ? JSON.stringify(data): data,
+      // data: data,
+
       header: header,
       success(res){
         //请求成功
@@ -43,7 +45,7 @@ function wbRequest(method, url, data){
 
 
 const API = {
-  getOpenid:(data) => wbRequest(POST, '/appWorkOrder/appLogin',data),
+  getOpenid:(data) => wbRequest(GET, '/appWorkOrder/appLogin',data),
 
 };
 
